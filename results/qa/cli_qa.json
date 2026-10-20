@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "command": "python -m aidc generate --date 2020-06-01 --output tmp/cli/public.json",
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "passed": true,
+      "output": "",
+      "errors": ""
+    },
+    {
+      "command": "python -m aidc solve tmp/cli/tiny.json --output tmp/cli/solution.json",
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "passed": true,
+      "output": "{\n  \"status\": 0,\n  \"message\": \"Optimization terminated successfully. (HiGHS Status 7: Optimal)\",\n  \"feasible\": true,\n  \"cost_cny\": 3.0,\n  \"carbon_kg\": 2.0,\n  \"mip_gap\": 0.0\n}\n",
+      "errors": ""
+    },
+    {
+      "command": "python -m aidc audit tmp/cli/tiny.json tmp/cli/solution.json",
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "passed": true,
+      "output": "{\n  \"passed\": true,\n  \"errors\": [],\n  \"max_residual\": 0.0,\n  \"residuals\": {\n    \"release:A\": 0.0,\n    \"deadline:A\": 0.0,\n    \"fairness:A\": 0.0,\n    \"integer_start:A\": 0.0,\n    \"release:B\": 0.0,\n    \"deadline:B\": 0.0,\n    \"fairness:B\": 0.0,\n    \"integer_start:B\": 0.0,\n    \"dependency:B\": 0.0,\n    \"gpu_capacity\": 0.0,\n    \"facility_capacity\": 0.0,\n    \"grid_nonnegative\": 0.0,\n    \"grid_cap\": 0.0,\n    \"renewable_nonnegative\": 0.0,\n    \"renewable_cap\": 0.0,\n    \"power_balance\": 0.0,\n    \"facility_reconstruction\": 0.0,\n    \"gpu_reconstruction\": 0.0,\n    \"cost_accounting\": 0.0,\n    \"carbon_accounting\": 0.0\n  },\n  \"metrics\": {\n    \"cost_cny\": 3.0,\n    \"grid_energy_cost_cny\": 3.0,\n    \"renewable_cost_cny\": 0.0,\n    \"demand_cost_cny\": 0.0,\n    \"battery_wear_cny\": 0.0,\n    \"carbon_kg\": 2.0,\n    \"peak_kw\": 1.0,\n    \"facility_kwh\": 2.0,\n    \"grid_kwh\": 2.0,\n    \"renewable_used_kwh\": 0.0,\n    \"renewable_available_kwh\": 0.0,\n    \"battery_loss_kwh\": 0.0,\n    \"gpu_hours\": 2.0,\n    \"jobs_completed\": 2,\n    \"max_wait_hours\": 3.0,\n    \"mean_wait_hours\": 2.0\n  }\n}\n",
+      "errors": ""
+    },
+    {
+      "command": "python -m aidc solve tmp/cli/tiny.json --carbon-cap 1 --output tmp/cli/infeasible.json",
+      "expected_exit_code": 2,
+      "actual_exit_code": 2,
+      "passed": true,
+      "output": "{\n  \"status\": 2,\n  \"message\": \"The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)\",\n  \"feasible\": false\n}\n",
+      "errors": ""
+    }
+  ],
+  "public_input_reproducible": true,
+  "note": "Public-data generation is tested on the main date; solve/audit/expected infeasibility use an artificial two-job correctness fixture."
+}

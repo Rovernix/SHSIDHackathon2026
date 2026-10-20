@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aidc-power-compute-scheduling"
+dynamic = ["version"]
+description = "Public-trace-driven GPU and battery scheduling with independent numerical audits"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["numpy>=2.1,<3", "scipy>=1.14,<2", "matplotlib>=3.9,<4"]
+
+[project.optional-dependencies]
+qa = ["PyMuPDF>=1.24", "Pillow>=10"]
+
+[project.scripts]
+aidc = "aidc.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["aidc", "aidc.*"]
+exclude = ["archive*", "push*", "tests*", "tmp*"]
+
+[tool.setuptools.dynamic]
+version = {attr = "aidc.__version__"}

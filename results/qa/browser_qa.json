@@ -1,0 +1,176 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "width": 1280,
+      "strategy": "joint_green",
+      "metrics": [
+        "205.54",
+        "10.97%",
+        "3.00%",
+        "29.52"
+      ],
+      "jobRows": 26,
+      "terminalSlot": true,
+      "search": true,
+      "viewportOverflow": false
+    },
+    {
+      "width": 1280,
+      "strategy": "joint_cost",
+      "metrics": [
+        "198.08",
+        "14.20%",
+        "1.39%",
+        "25.93"
+      ],
+      "jobRows": 26,
+      "terminalSlot": true,
+      "search": true,
+      "viewportOverflow": false
+    },
+    {
+      "width": 1280,
+      "strategy": "compute_only",
+      "metrics": [
+        "206.39",
+        "10.60%",
+        "0.41%",
+        "31.20"
+      ],
+      "jobRows": 26,
+      "terminalSlot": true,
+      "search": true,
+      "viewportOverflow": false
+    },
+    {
+      "width": 1280,
+      "strategy": "fifo_storage",
+      "metrics": [
+        "205.39",
+        "11.03%",
+        "0.59%",
+        "28.88"
+      ],
+      "jobRows": 26,
+      "terminalSlot": true,
+      "search": true,
+      "viewportOverflow": false
+    },
+    {
+      "width": 1280,
+      "strategy": "fifo",
+      "metrics": [
+        "230.85",
+        "0.00%",
+        "0.00%",
+        "42.55"
+      ],
+      "jobRows": 26,
+      "terminalSlot": true,
+      "search": true,
+      "viewportOverflow": false
+    },
+    {
+      "width": 1280,
+      "strategy": "rolling",
+      "metrics": [
+        "228.41",
+        "1.06%",
+        "-0.61%",
+        "41.20"
+      ],
+      "jobRows": 26,
+      "terminalSlot": true,
+      "search": true,
+      "viewportOverflow": false
+    },
+    {
+      "width": 390,
+      "strategy": "joint_green",
+      "metrics": [
+        "205.54",
+        "10.97%",
+        "3.00%",
+        "29.52"
+      ],
+      "jobRows": 26,
+      "terminalSlot": true,
+      "search": true,
+      "viewportOverflow": false
+    },
+    {
+      "width": 390,
+      "strategy": "joint_cost",
+      "metrics": [
+        "198.08",
+        "14.20%",
+        "1.39%",
+        "25.93"
+      ],
+      "jobRows": 26,
+      "terminalSlot": true,
+      "search": true,
+      "viewportOverflow": false
+    },
+    {
+      "width": 390,
+      "strategy": "compute_only",
+      "metrics": [
+        "206.39",
+        "10.60%",
+        "0.41%",
+        "31.20"
+      ],
+      "jobRows": 26,
+      "terminalSlot": true,
+      "search": true,
+      "viewportOverflow": false
+    },
+    {
+      "width": 390,
+      "strategy": "fifo_storage",
+      "metrics": [
+        "205.39",
+        "11.03%",
+        "0.59%",
+        "28.88"
+      ],
+      "jobRows": 26,
+      "terminalSlot": true,
+      "search": true,
+      "viewportOverflow": false
+    },
+    {
+      "width": 390,
+      "strategy": "fifo",
+      "metrics": [
+        "230.85",
+        "0.00%",
+        "0.00%",
+        "42.55"
+      ],
+      "jobRows": 26,
+      "terminalSlot": true,
+      "search": true,
+      "viewportOverflow": false
+    },
+    {
+      "width": 390,
+      "strategy": "rolling",
+      "metrics": [
+        "228.41",
+        "1.06%",
+        "-0.61%",
+        "41.20"
+      ],
+      "jobRows": 26,
+      "terminalSlot": true,
+      "search": true,
+      "viewportOverflow": false
+    }
+  ],
+  "explorer_sha256": "9b8d52b9a857333e97e083333907939b48c88da46d1c08f02ed0a4e415a06ffb",
+  "template_sha256": "cdc8f6b4d736d7496cbb311065fe3cef6c7db39b425f8913d722ddc9ae9d5b5a",
+  "documentationAssertions": true
+}

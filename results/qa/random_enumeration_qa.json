@@ -1,0 +1,545 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "seed": 40,
+      "case": "carbon_under_cost_cap",
+      "enumerated_legal_schedules": 4,
+      "expected": 0.7168082208867332,
+      "actual": 0.7168082208867332,
+      "status": 0,
+      "passed": true
+    },
+    {
+      "seed": 41,
+      "case": "carbon_under_cost_cap",
+      "enumerated_legal_schedules": 0,
+      "expected": null,
+      "actual": null,
+      "status": 2,
+      "passed": true
+    },
+    {
+      "seed": 42,
+      "case": "carbon_under_cost_cap",
+      "enumerated_legal_schedules": 4,
+      "expected": 2.56424263206708,
+      "actual": 2.5642426320670806,
+      "status": 0,
+      "passed": true
+    },
+    {
+      "seed": 43,
+      "case": "carbon_under_cost_cap",
+      "enumerated_legal_schedules": 3,
+      "expected": 1.4047506596766988,
+      "actual": 1.4047506596766988,
+      "status": 0,
+      "passed": true
+    },
+    {
+      "seed": 44,
+      "case": "carbon_under_cost_cap",
+      "enumerated_legal_schedules": 0,
+      "expected": null,
+      "actual": null,
+      "status": 2,
+      "passed": true
+    },
+    {
+      "seed": 45,
+      "case": "carbon_under_cost_cap",
+      "enumerated_legal_schedules": 0,
+      "expected": null,
+      "actual": null,
+      "status": 2,
+      "passed": true
+    },
+    {
+      "seed": 46,
+      "case": "carbon_under_cost_cap",
+      "enumerated_legal_schedules": 4,
+      "expected": 2.2665540637070696,
+      "actual": 2.2665540637070696,
+      "status": 0,
+      "passed": true
+    },
+    {
+      "seed": 47,
+      "case": "carbon_under_cost_cap",
+      "enumerated_legal_schedules": 1,
+      "expected": 0.7386999593746622,
+      "actual": 0.7386999593746623,
+      "status": 0,
+      "passed": true
+    },
+    {
+      "seed": 48,
+      "case": "carbon_under_cost_cap",
+      "enumerated_legal_schedules": 1,
+      "expected": 1.2952377811124947,
+      "actual": 1.2952377811124949,
+      "status": 0,
+      "passed": true
+    },
+    {
+      "seed": 49,
+      "case": "carbon_under_cost_cap",
+      "enumerated_legal_schedules": 0,
+      "expected": null,
+      "actual": null,
+      "status": 2,
+      "passed": true
+    },
+    {
+      "seed": 50,
+      "case": "carbon_under_cost_cap",
+      "enumerated_legal_schedules": 0,
+      "expected": null,
+      "actual": null,
+      "status": 2,
+      "passed": true
+    },
+    {
+      "seed": 51,
+      "case": "carbon_under_cost_cap",
+      "enumerated_legal_schedules": 0,
+      "expected": null,
+      "actual": null,
+      "status": 2,
+      "passed": true
+    },
+    {
+      "seed": 52,
+      "case": "carbon_under_cost_cap",
+      "enumerated_legal_schedules": 3,
+      "expected": 0.32478725746514214,
+      "actual": 0.32478725746514214,
+      "status": 0,
+      "passed": true
+    },
+    {
+      "seed": 53,
+      "case": "carbon_under_cost_cap",
+      "enumerated_legal_schedules": 0,
+      "expected": null,
+      "actual": null,
+      "status": 2,
+      "passed": true
+    },
+    {
+      "seed": 54,
+      "case": "carbon_under_cost_cap",
+      "enumerated_legal_schedules": 2,
+      "expected": 0.4776838450364409,
+      "actual": 0.4776838450364409,
+      "status": 0,
+      "passed": true
+    },
+    {
+      "seed": 55,
+      "case": "carbon_under_cost_cap",
+      "enumerated_legal_schedules": 0,
+      "expected": null,
+      "actual": null,
+      "status": 2,
+      "passed": true
+    },
+    {
+      "seed": 56,
+      "case": "carbon_under_cost_cap",
+      "enumerated_legal_schedules": 1,
+      "expected": 1.5912918603325645,
+      "actual": 1.5912918603325643,
+      "status": 0,
+      "passed": true
+    },
+    {
+      "seed": 57,
+      "case": "carbon_under_cost_cap",
+      "enumerated_legal_schedules": 0,
+      "expected": null,
+      "actual": null,
+      "status": 2,
+      "passed": true
+    },
+    {
+      "seed": 58,
+      "case": "carbon_under_cost_cap",
+      "enumerated_legal_schedules": 1,
+      "expected": 0.8124712995171656,
+      "actual": 0.8124712995171656,
+      "status": 0,
+      "passed": true
+    },
+    {
+      "seed": 59,
+      "case": "carbon_under_cost_cap",
+      "enumerated_legal_schedules": 0,
+      "expected": null,
+      "actual": null,
+      "status": 2,
+      "passed": true
+    },
+    {
+      "seed": 0,
+      "case": "cost",
+      "enumerated_legal_schedules": 0,
+      "expected": null,
+      "actual": null,
+      "status": 2,
+      "passed": true
+    },
+    {
+      "seed": 1,
+      "case": "cost",
+      "enumerated_legal_schedules": 0,
+      "expected": null,
+      "actual": null,
+      "status": 2,
+      "passed": true
+    },
+    {
+      "seed": 2,
+      "case": "cost",
+      "enumerated_legal_schedules": 8,
+      "expected": 4.261708545383051,
+      "actual": 4.261708545383052,
+      "status": 0,
+      "passed": true
+    },
+    {
+      "seed": 3,
+      "case": "cost",
+      "enumerated_legal_schedules": 6,
+      "expected": 6.386853286371004,
+      "actual": 6.386853286371005,
+      "status": 0,
+      "passed": true
+    },
+    {
+      "seed": 4,
+      "case": "cost",
+      "enumerated_legal_schedules": 2,
+      "expected": 5.083920629597802,
+      "actual": 5.083920629597802,
+      "status": 0,
+      "passed": true
+    },
+    {
+      "seed": 5,
+      "case": "cost",
+      "enumerated_legal_schedules": 1,
+      "expected": 5.469399016133369,
+      "actual": 5.46939901613337,
+      "status": 0,
+      "passed": true
+    },
+    {
+      "seed": 6,
+      "case": "cost",
+      "enumerated_legal_schedules": 2,
+      "expected": 8.292546113045216,
+      "actual": 8.292546113045216,
+      "status": 0,
+      "passed": true
+    },
+    {
+      "seed": 7,
+      "case": "cost",
+      "enumerated_legal_schedules": 0,
+      "expected": null,
+      "actual": null,
+      "status": 2,
+      "passed": true
+    },
+    {
+      "seed": 8,
+      "case": "cost",
+      "enumerated_legal_schedules": 3,
+      "expected": 5.555365372841469,
+      "actual": 5.555365372841468,
+      "status": 0,
+      "passed": true
+    },
+    {
+      "seed": 9,
+      "case": "cost",
+      "enumerated_legal_schedules": 0,
+      "expected": null,
+      "actual": null,
+      "status": 2,
+      "passed": true
+    },
+    {
+      "seed": 10,
+      "case": "cost",
+      "enumerated_legal_schedules": 5,
+      "expected": 7.131220115368199,
+      "actual": 7.131220115368199,
+      "status": 0,
+      "passed": true
+    },
+    {
+      "seed": 11,
+      "case": "cost",
+      "enumerated_legal_schedules": 0,
+      "expected": null,
+      "actual": null,
+      "status": 2,
+      "passed": true
+    },
+    {
+      "seed": 12,
+      "case": "cost",
+      "enumerated_legal_schedules": 4,
+      "expected": 1.3626826323167862,
+      "actual": 1.3626826323167862,
+      "status": 0,
+      "passed": true
+    },
+    {
+      "seed": 13,
+      "case": "cost",
+      "enumerated_legal_schedules": 2,
+      "expected": 6.528328403268856,
+      "actual": 6.528328403268855,
+      "status": 0,
+      "passed": true
+    },
+    {
+      "seed": 14,
+      "case": "cost",
+      "enumerated_legal_schedules": 0,
+      "expected": null,
+      "actual": null,
+      "status": 2,
+      "passed": true
+    },
+    {
+      "seed": 15,
+      "case": "cost",
+      "enumerated_legal_schedules": 0,
+      "expected": null,
+      "actual": null,
+      "status": 2,
+      "passed": true
+    },
+    {
+      "seed": 16,
+      "case": "cost",
+      "enumerated_legal_schedules": 0,
+      "expected": null,
+      "actual": null,
+      "status": 2,
+      "passed": true
+    },
+    {
+      "seed": 17,
+      "case": "cost",
+      "enumerated_legal_schedules": 0,
+      "expected": null,
+      "actual": null,
+      "status": 2,
+      "passed": true
+    },
+    {
+      "seed": 18,
+      "case": "cost",
+      "enumerated_legal_schedules": 0,
+      "expected": null,
+      "actual": null,
+      "status": 2,
+      "passed": true
+    },
+    {
+      "seed": 19,
+      "case": "cost",
+      "enumerated_legal_schedules": 2,
+      "expected": 6.389980073019207,
+      "actual": 6.389980073019207,
+      "status": 0,
+      "passed": true
+    },
+    {
+      "seed": 20,
+      "case": "cost_under_carbon_cap",
+      "enumerated_legal_schedules": 2,
+      "expected": 2.6543770289245616,
+      "actual": 2.6543770289245616,
+      "status": 0,
+      "passed": true
+    },
+    {
+      "seed": 21,
+      "case": "cost_under_carbon_cap",
+      "enumerated_legal_schedules": 3,
+      "expected": 4.156826769900372,
+      "actual": 4.156826769900372,
+      "status": 0,
+      "passed": true
+    },
+    {
+      "seed": 22,
+      "case": "cost_under_carbon_cap",
+      "enumerated_legal_schedules": 2,
+      "expected": 2.5680657475828257,
+      "actual": 2.5680657475828257,
+      "status": 0,
+      "passed": true
+    },
+    {
+      "seed": 23,
+      "case": "cost_under_carbon_cap",
+      "enumerated_legal_schedules": 3,
+      "expected": 1.0311196149201407,
+      "actual": 1.0311196149201407,
+      "status": 0,
+      "passed": true
+    },
+    {
+      "seed": 24,
+      "case": "cost_under_carbon_cap",
+      "enumerated_legal_schedules": 2,
+      "expected": 2.1890390252018097,
+      "actual": 2.1890390252018097,
+      "status": 0,
+      "passed": true
+    },
+    {
+      "seed": 25,
+      "case": "cost_under_carbon_cap",
+      "enumerated_legal_schedules": 0,
+      "expected": null,
+      "actual": null,
+      "status": 2,
+      "passed": true
+    },
+    {
+      "seed": 26,
+      "case": "cost_under_carbon_cap",
+      "enumerated_legal_schedules": 1,
+      "expected": 8.586976134640347,
+      "actual": 8.586976134640347,
+      "status": 0,
+      "passed": true
+    },
+    {
+      "seed": 27,
+      "case": "cost_under_carbon_cap",
+      "enumerated_legal_schedules": 6,
+      "expected": 1.6919761332056753,
+      "actual": 1.6919761332056753,
+      "status": 0,
+      "passed": true
+    },
+    {
+      "seed": 28,
+      "case": "cost_under_carbon_cap",
+      "enumerated_legal_schedules": 1,
+      "expected": 1.6154215516157413,
+      "actual": 1.615421551615741,
+      "status": 0,
+      "passed": true
+    },
+    {
+      "seed": 29,
+      "case": "cost_under_carbon_cap",
+      "enumerated_legal_schedules": 0,
+      "expected": null,
+      "actual": null,
+      "status": 2,
+      "passed": true
+    },
+    {
+      "seed": 30,
+      "case": "cost_under_carbon_cap",
+      "enumerated_legal_schedules": 1,
+      "expected": 2.8267360829569443,
+      "actual": 2.8267360829569443,
+      "status": 0,
+      "passed": true
+    },
+    {
+      "seed": 31,
+      "case": "cost_under_carbon_cap",
+      "enumerated_legal_schedules": 0,
+      "expected": null,
+      "actual": null,
+      "status": 2,
+      "passed": true
+    },
+    {
+      "seed": 32,
+      "case": "cost_under_carbon_cap",
+      "enumerated_legal_schedules": 5,
+      "expected": 1.775630084498582,
+      "actual": 1.7756300844985822,
+      "status": 0,
+      "passed": true
+    },
+    {
+      "seed": 33,
+      "case": "cost_under_carbon_cap",
+      "enumerated_legal_schedules": 0,
+      "expected": null,
+      "actual": null,
+      "status": 2,
+      "passed": true
+    },
+    {
+      "seed": 34,
+      "case": "cost_under_carbon_cap",
+      "enumerated_legal_schedules": 1,
+      "expected": 2.3351691945722397,
+      "actual": 2.3351691945722397,
+      "status": 0,
+      "passed": true
+    },
+    {
+      "seed": 35,
+      "case": "cost_under_carbon_cap",
+      "enumerated_legal_schedules": 0,
+      "expected": null,
+      "actual": null,
+      "status": 2,
+      "passed": true
+    },
+    {
+      "seed": 36,
+      "case": "cost_under_carbon_cap",
+      "enumerated_legal_schedules": 2,
+      "expected": 8.861082906787727,
+      "actual": 8.861082906787727,
+      "status": 0,
+      "passed": true
+    },
+    {
+      "seed": 37,
+      "case": "cost_under_carbon_cap",
+      "enumerated_legal_schedules": 2,
+      "expected": 1.934912097677734,
+      "actual": 1.934912097677734,
+      "status": 0,
+      "passed": true
+    },
+    {
+      "seed": 38,
+      "case": "cost_under_carbon_cap",
+      "enumerated_legal_schedules": 1,
+      "expected": 7.562091266791239,
+      "actual": 7.5620912667912386,
+      "status": 0,
+      "passed": true
+    },
+    {
+      "seed": 39,
+      "case": "cost_under_carbon_cap",
+      "enumerated_legal_schedules": 3,
+      "expected": 0.8193051758444858,
+      "actual": 0.8193051758444857,
+      "status": 0,
+      "passed": true
+    }
+  ]
+}

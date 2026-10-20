@@ -1,0 +1,138 @@
+{
+  "passed": true,
+  "checked_at_utc": "2026-10-20T14:18:22.381083+00:00",
+  "checks": [
+    {
+      "name": "required_files",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "package_version_single_source",
+      "passed": true,
+      "detail": "1.1.0"
+    },
+    {
+      "name": "json_files_parse",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "local_markdown_links",
+      "passed": true,
+      "detail": {
+        "checked": 34,
+        "broken": []
+      }
+    },
+    {
+      "name": "generated_documentation_matches_saved_evidence",
+      "passed": true,
+      "detail": {
+        "passed": true,
+        "generated_documents": 5,
+        "outdated": [],
+        "check_only": true
+      }
+    },
+    {
+      "name": "concise_document_set",
+      "passed": true,
+      "detail": [
+        "README.md",
+        "docs/reproduction.md",
+        "docs/research.md",
+        "docs/results.md",
+        "docs/submission.md"
+      ]
+    },
+    {
+      "name": "supplemental_material_is_citation_only",
+      "passed": true,
+      "detail": "Citation remains in research references only"
+    },
+    {
+      "name": "portable_latex_figures",
+      "passed": true,
+      "detail": {
+        "checked": 3,
+        "missing": []
+      }
+    },
+    {
+      "name": "recorded_core_verification",
+      "passed": true,
+      "detail": {
+        "unit_tests": 61,
+        "numerical_audits": 55
+      }
+    },
+    {
+      "name": "recorded_browser_and_pdf_evidence",
+      "passed": true,
+      "detail": {
+        "browser_cases": 12,
+        "pdf_pages": 7,
+        "fresh_browser_or_pdf_run": false
+      }
+    },
+    {
+      "name": "report_matches_pdf_qa_hash",
+      "passed": true,
+      "detail": "8f23f632cff9636f261f7d00bc23ed0677f10e0e13baa63998121f4d5c350531"
+    },
+    {
+      "name": "latex_source_matches_recorded_pdf_qa",
+      "passed": true,
+      "detail": "dd7555dff5245870a5b45c1741cf7b59434de4fe0f981700037b71f8d30af557"
+    },
+    {
+      "name": "explorer_matches_browser_qa_hash",
+      "passed": true,
+      "detail": "9b8d52b9a857333e97e083333907939b48c88da46d1c08f02ed0a4e415a06ffb"
+    },
+    {
+      "name": "explorer_template_matches_recorded_browser_qa",
+      "passed": true,
+      "detail": "cdc8f6b4d736d7496cbb311065fe3cef6c7db39b425f8913d722ddc9ae9d5b5a"
+    },
+    {
+      "name": "public_source_excerpt_hashes",
+      "passed": true,
+      "detail": {
+        "files": 9,
+        "mismatches": []
+      }
+    },
+    {
+      "name": "processed_input_matches_experiment",
+      "passed": true,
+      "detail": "Semantic JSON hashes"
+    },
+    {
+      "name": "english_prose_and_source",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "original_problem_documents_excluded",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "headline_summary_matches_schedule",
+      "passed": true,
+      "detail": {
+        "cost_cny": 205.53594379182658,
+        "carbon_kg": 94.74454242000004,
+        "peak_kw": 29.52440426280111
+      }
+    }
+  ],
+  "headline_metrics": {
+    "cost_cny_reduction_percent": 10.967339240097784,
+    "carbon_kg_reduction_percent": 2.999999999999947,
+    "peak_kw_reduction_percent": 30.6157072222196
+  },
+  "note": "Core verification is run separately. Browser/PDF checks validate saved evidence and unchanged artifact hashes."
+}

@@ -1,0 +1,26 @@
+{
+  "pdf_sha256": "8f23f632cff9636f261f7d00bc23ed0677f10e0e13baa63998121f4d5c350531",
+  "rendered_pages": 7,
+  "renderer": "PyMuPDF, 1.3x; Pillow contact sheets",
+  "visual_review": {
+    "passed": true,
+    "reviewed_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "notes": "All seven current report pages reviewed; data/chart page 2 and final references page 7 also inspected at full resolution. No clipping, overlap or replacement glyphs; enlarged input-chart labels remain legible."
+  },
+  "browser_visual_review": {
+    "passed": true,
+    "viewports": [
+      390,
+      1280
+    ],
+    "notes": "Both current screenshots reviewed; responsive layout, job tables, precise certificate gap and relocated verification summary are clear."
+  }
+}

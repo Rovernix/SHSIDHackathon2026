@@ -1,0 +1,29 @@
+{
+  "method": "LP relaxation",
+  "objective_kind": "cost",
+  "status": 0,
+  "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+  "seconds": 0.15559460000076797,
+  "variables": 1404,
+  "binary_variables": 0,
+  "constraints": 1082,
+  "feasible": true,
+  "carbon_cap_kg": 94.74454242,
+  "cost_cap_cny": null,
+  "time_limit_seconds": 15.0,
+  "requested_relative_gap": 0.002,
+  "energy_diagnostic": {
+    "necessary_facility_energy_lower_bound_kwh": 855.6,
+    "maximum_grid_plus_renewable_energy_kwh": 3175.9120000000003,
+    "proven_energy_deficit_kwh": 0.0,
+    "note": "A positive deficit proves infeasibility; zero does not prove feasibility"
+  },
+  "objective": 204.90876496191433,
+  "cost_cny": 204.90876496191413,
+  "carbon_kg": 94.74454242000007,
+  "max_matrix_violation": 1.1368683772161603e-13,
+  "max_integrality_error": 0.0,
+  "lower_bound": 204.90876496191433,
+  "mip_gap": 0.0,
+  "node_count": 0
+}

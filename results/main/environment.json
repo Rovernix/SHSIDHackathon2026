@@ -1,0 +1,10 @@
+{
+  "input_sha256": "b2c41ef34cb6b5ce2c4c2827fd9cd3e1dce48e4eae161af1b4da773d941cb302",
+  "python": "3.14.0",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "solver": "HiGHS bundled with SciPy",
+  "time_limit_per_solve": 15.0,
+  "requested_relative_gap": 0.002,
+  "data_provenance": "public-trace-driven composite benchmark; explicit asset and service assumptions"
+}

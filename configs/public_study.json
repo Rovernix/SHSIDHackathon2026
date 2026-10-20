@@ -1,0 +1,27 @@
+{
+  "main_date": "2020-06-01",
+  "evaluation_dates": ["2020-06-02", "2020-06-03", "2020-06-04", "2020-06-05", "2020-06-08"],
+  "helios_cluster": "Saturn",
+  "helios_virtual_cluster": "vcOIr",
+  "max_jobs": 32,
+  "minimum_duration_seconds": 1800,
+  "maximum_duration_seconds": 10800,
+  "latest_submission_hour": 18,
+  "assumed_max_wait_hours": 4,
+  "assumed_cny_per_gbp": 9.0,
+  "assumed_renewable_scale_kw_per_mw": 0.004,
+  "assumed_job_incremental_kw_per_gpu": 0.25,
+  "assumed_background_kw_per_gpu": 0.25,
+  "assumed_base_it_kw": 20.0,
+  "assumed_pue": 1.2,
+  "assumed_facility_cap_kw": 150.0,
+  "assumed_grid_cap_kw": 120.0,
+  "assumed_grid_ramp_kw_per_step": 50.0,
+  "assumed_demand_cny_per_kw_day": 2.0,
+  "assumed_renewable_cny_per_kwh": 0.06,
+  "online_reserve_gpus": 4,
+  "batteries": [
+    {"name": "LFP", "capacity_kwh": 40.0, "min_kwh": 4.0, "max_kwh": 36.0, "initial_kwh": 20.0, "charge_kw": 10.0, "discharge_kw": 10.0, "eta_charge": 0.96, "eta_discharge": 0.96, "wear_cny_per_kwh": 0.035, "reserve_kwh": 0.0, "reserve_kw": 0.0},
+    {"name": "Na-ion", "capacity_kwh": 6.0, "min_kwh": 0.6, "max_kwh": 5.4, "initial_kwh": 3.0, "charge_kw": 6.0, "discharge_kw": 6.0, "eta_charge": 0.94, "eta_discharge": 0.94, "wear_cny_per_kwh": 0.055, "reserve_kwh": 1.2, "reserve_kw": 2.0}
+  ]
+}

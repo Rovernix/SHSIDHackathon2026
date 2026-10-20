@@ -1,0 +1,63 @@
+{
+  "page_count": 7,
+  "native_latex": true,
+  "scalable_fonts_only": true,
+  "overfull_boxes": [],
+  "latex_errors": [],
+  "pages": [
+    {
+      "page": 1,
+      "replacement_glyphs": 0,
+      "out_of_bounds": [],
+      "links": 0,
+      "text_characters": 1367
+    },
+    {
+      "page": 2,
+      "replacement_glyphs": 0,
+      "out_of_bounds": [],
+      "links": 0,
+      "text_characters": 1943
+    },
+    {
+      "page": 3,
+      "replacement_glyphs": 0,
+      "out_of_bounds": [],
+      "links": 0,
+      "text_characters": 1459
+    },
+    {
+      "page": 4,
+      "replacement_glyphs": 0,
+      "out_of_bounds": [],
+      "links": 0,
+      "text_characters": 1672
+    },
+    {
+      "page": 5,
+      "replacement_glyphs": 0,
+      "out_of_bounds": [],
+      "links": 0,
+      "text_characters": 997
+    },
+    {
+      "page": 6,
+      "replacement_glyphs": 0,
+      "out_of_bounds": [],
+      "links": 0,
+      "text_characters": 1678
+    },
+    {
+      "page": 7,
+      "replacement_glyphs": 0,
+      "out_of_bounds": [],
+      "links": 7,
+      "text_characters": 2474
+    }
+  ],
+  "required_results_present": true,
+  "supplemental_citation_only": true,
+  "tex_sha256": "dd7555dff5245870a5b45c1741cf7b59434de4fe0f981700037b71f8d30af557",
+  "sha256": "8f23f632cff9636f261f7d00bc23ed0677f10e0e13baa63998121f4d5c350531",
+  "passed": true
+}

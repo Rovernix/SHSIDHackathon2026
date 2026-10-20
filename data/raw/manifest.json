@@ -1,0 +1,88 @@
+{
+  "sources": [
+    {
+      "id": "helios",
+      "publisher": "SenseTime / S-Lab System Group",
+      "canonical_url": "https://github.com/S-Lab-System-Group/HeliosData",
+      "download_url": "https://raw.githubusercontent.com/S-Lab-System-Group/HeliosData/159f0caeec16600b9b6017862952a36aae01c43f/data.zip",
+      "commit": "159f0caeec16600b9b6017862952a36aae01c43f",
+      "archive_sha256": "3d22a5f6c0ae669e2fcbfe4200fa9c48664507bc397c677bad8f085222c032ac",
+      "license": "CC BY 4.0",
+      "citation": "Characterization and Prediction of Deep Learning Workloads in Large-Scale GPU Datacenters, SC 2021",
+      "extraction": "Saturn / vcOIr only; selected columns and original CSV row numbers retained"
+    },
+    {
+      "id": "opsd",
+      "publisher": "Open Power System Data; original ENTSO-E Transparency records",
+      "canonical_url": "https://data.open-power-system-data.org/time_series/2020-10-06/time_series.sqlite",
+      "version": "2020-10-06",
+      "doi": "10.25832/time_series/2020-10-06",
+      "archival_mirror_url": "https://raw.githubusercontent.com/FlorianRauls/german-power-grid-dashboard/c5991843669f084aa6452b3fe2f979a2d33aa678/data/time_series.zip",
+      "mirror_commit": "c5991843669f084aa6452b3fe2f979a2d33aa678",
+      "official_checksum_url": "https://raw.githubusercontent.com/Open-Power-System-Data/time_series/e1d671dbddf222dbaeb80cf7c4fa8d56b25fa365/checksums.txt",
+      "database_sha256": "37ef381572b669937712f85e8c5b40f4ef6148bf9a288424c503e2db2e72f51c",
+      "matches_official_database_checksum": true,
+      "license": "Source-specific ENTSO-E terms; OPSD attribution retained, no blanket license asserted",
+      "extraction": "240 hourly British records, selected columns, no interpolation or clipping"
+    },
+    {
+      "id": "neso",
+      "publisher": "UK Carbon Intensity API",
+      "canonical_url": "https://api.carbonintensity.org.uk/intensity/2020-05-31T00:00Z/2020-06-10T00:00Z",
+      "license": "CC BY 4.0",
+      "extraction": "Unmodified API response; exact from/to intervals retained"
+    }
+  ],
+  "files": [
+    {
+      "path": "helios/LICENSE.txt",
+      "bytes": 18653,
+      "sha256": "9bbc1ea9fe5c96df01b311a2ac864d5b18fc87b9948bfd14770e4b44db755ee9"
+    },
+    {
+      "path": "helios/README.source.md",
+      "bytes": 6201,
+      "sha256": "370b3a365bbe05e81ca44464f6e8776b41b36fc00c355b0e9424bfa74103c4eb"
+    },
+    {
+      "path": "helios/saturn_vc_capacity.csv",
+      "bytes": 233,
+      "sha256": "a6a6fe433dd79a6d1ccff3c115caedf0f04d9bdb4b6021bd8538635d2753afcb"
+    },
+    {
+      "path": "helios/saturn_vc_jobs.csv",
+      "bytes": 705737,
+      "sha256": "9e722a59bd46dcfbc9ceda62903e96762e49646a333d7b5d5a0d9562bbf39691"
+    },
+    {
+      "path": "neso/intensity.json",
+      "bytes": 53814,
+      "sha256": "eb5e1130bcaeac808ee291aa387449f16735578f74c631d5e3adbb1d1ca7d0ce"
+    },
+    {
+      "path": "opsd/checksums.txt",
+      "bytes": 1042,
+      "sha256": "7c725fdc287f0ca338b383a7c56ffe5474e9ae7269e2fb5126949698cbebf941"
+    },
+    {
+      "path": "opsd/datapackage.json",
+      "bytes": 303438,
+      "sha256": "2f4b7ae48e1352deb1991728e013fe42e742af5e81a5140d87185e470cd0ac36"
+    },
+    {
+      "path": "opsd/gb_hourly.csv",
+      "bytes": 11750,
+      "sha256": "d983959224cb8f0d440e5e67e59f815c733ca43d29773cd638ceae2ece634a82"
+    },
+    {
+      "path": "opsd/README.source.md",
+      "bytes": 67603,
+      "sha256": "53adb94ca0912a277c1b78f43337ec33129ebd520b5700ba1c64d666dce70ec0"
+    }
+  ],
+  "extraction_version": 1,
+  "selected_vc": "vcOIr",
+  "helios_excerpt_rows": 6879,
+  "opsd_excerpt_rows": 240,
+  "note": "The source database was recovered from a public mirror and verified byte-for-byte with the publisher's checksum. No generated fallback observations are permitted."
+}
