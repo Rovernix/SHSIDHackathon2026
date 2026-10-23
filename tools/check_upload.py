@@ -66,6 +66,7 @@ def main():
 
     required = [*DOCUMENTS, ".gitignore", "requirements.txt",
                 "aidc/__main__.py", "data/processed/main.json", "data/raw/manifest.json", "tests/test_open_data.py",
+                "tests/test_audit_validation.py",
                 "configs/public_study.json", "pyproject.toml", "data/source_documents.json", "templates/results_explorer.html",
                 "output/reports/AIDC_Modeling_Report.pdf", "output/demo/Results_Explorer.html",
                 "output/reports/latex/AIDC_Modeling_Report.tex"]
@@ -124,7 +125,7 @@ def main():
     verification = read("results/qa/verification.json")
     audit_rows = verification["numerical_audits"]
     check("recorded_core_verification", verification["passed"] and
-          verification["unit_tests"]["tests_run"] >= 61 and verification["public_data"]["passed"] and
+          verification["unit_tests"]["tests_run"] >= 74 and verification["public_data"]["passed"] and
           all(row["passed"] for row in audit_rows),
           dict(unit_tests=verification["unit_tests"]["tests_run"], numerical_audits=len(audit_rows)))
     browser = read("results/qa/browser_qa.json")

@@ -12,7 +12,7 @@ from aidc.datasets import build_scenario, verify_raw_files
 from aidc.datasets.open_data import hourly_records
 from aidc.experiments import tiny_data
 from aidc.model import solve
-from aidc.paths import RAW
+from aidc.paths import RAW, ROOT
 
 
 class OpenDataTests(unittest.TestCase):
@@ -78,8 +78,12 @@ class OpenDataTests(unittest.TestCase):
             hourly_records([self.energy[0]] + self.energy, "2020-05-31")
 
     def test_source_corruption_is_not_silently_regenerated(self):
-        with tempfile.TemporaryDirectory() as folder:
-            root = Path(folder)
+        scratch = (ROOT / "tmp").resolve()
+        self.assertTrue(scratch.is_relative_to(ROOT))
+        scratch.mkdir(exist_ok=True)
+        with tempfile.TemporaryDirectory(prefix="open-data-", dir=scratch) as folder:
+            root = Path(folder).resolve()
+            self.assertTrue(root.is_relative_to(scratch))
             (root / "manifest.json").write_text(json.dumps({"files": [{"path": "observation.csv", "sha256": "0" * 64}]}))
             (root / "observation.csv").write_text("corrupted")
             with self.assertRaisesRegex(ValueError, "checksum failure"):

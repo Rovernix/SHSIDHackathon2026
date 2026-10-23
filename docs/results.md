@@ -54,7 +54,7 @@ Both main replays complete 96 decisions. Candidates 0/2/4/8 are selected on June
 
 ## Verification
 
-The saved run passes **61 unit tests** and **55 independent numerical audits**. Sixty brute-force random cases are subcases of three tests. Checks cover source hashes/fields, conversions, timing, complete jobs, GPU/power limits, all battery states, accounting, causal locks and tampered outputs.
+The saved run passes **74 unit tests** and **55 independent numerical audits**. Sixty brute-force random cases are subcases of three tests. Checks cover source hashes/fields, conversions, timing, complete jobs, GPU/power limits, unique configured batteries, all energy states, finite arithmetic, accounting, causal locks and tampered outputs.
 
 | Evidence | Scope |
 |---|---|

@@ -1,5 +1,5 @@
 {
-  "pdf_sha256": "8f23f632cff9636f261f7d00bc23ed0677f10e0e13baa63998121f4d5c350531",
+  "pdf_sha256": "d35adafcae29da4aed733227832e00f10630b91bd10f54f4282d4a269592ccb4",
   "rendered_pages": 7,
   "renderer": "PyMuPDF, 1.3x; Pillow contact sheets",
   "visual_review": {
@@ -13,14 +13,6 @@
       6,
       7
     ],
-    "notes": "All seven current report pages reviewed; data/chart page 2 and final references page 7 also inspected at full resolution. No clipping, overlap or replacement glyphs; enlarged input-chart labels remain legible."
-  },
-  "browser_visual_review": {
-    "passed": true,
-    "viewports": [
-      390,
-      1280
-    ],
-    "notes": "Both current screenshots reviewed; responsive layout, job tables, precise certificate gap and relocated verification summary are clear."
+    "notes": "All seven current report pages reviewed on rendered images; page 7 also inspected at full resolution for the 74-test evidence and audit regression description. No clipping, overlap or replacement glyphs found."
   }
 }

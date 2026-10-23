@@ -46,7 +46,7 @@ The library supports/tests DAG precedence (parent finishes before child starts),
 
 SciPy `milp` calls HiGHS branch-and-bound/cut methods. Feasible incumbent U and target-problem bound L bracket the optimum; report (U-L)/|U| and actual status. Status 0 means tolerance reached, 1 a time/resource limit, 2 infeasibility. LP relaxation is a lower bound, not an executable fractional schedule. Incumbents may transfer to looser carbon budgets; bounds remain target-specific.
 
-The independent audit reconstructs jobs, GPU limits, load, power balance, grid/solar/ramp, all battery states and cost/carbon without reading the MILP matrix. Online replay locks past actions/launched jobs, hides future releases, and replans each slot; it has no whole-day green cap or global policy certificate.
+The independent audit validates inputs, rejects duplicate/unknown batteries and nonfinite arithmetic, then reconstructs jobs, GPU limits, load, power balance, grid/solar/ramp, energy states and cost/carbon without reading the MILP matrix. Online replay locks history, hides future releases and replans each slot; it has no whole-day green cap or global policy certificate.
 
 Grid charging is counted once; batteries restore initial energy. Average-carbon accounting excludes lifecycle emissions. Power, deadlines, storage, daily peak billing and relocated runtimes remain assumptions. Aggregate GPUs do not certify CPU/RAM/topology or inference latency; a 15-minute model does not validate transients. Capex, TCO and ROI are outside scope.
 

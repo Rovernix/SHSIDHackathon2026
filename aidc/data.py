@@ -8,6 +8,7 @@ from __future__ import annotations
 import copy
 import hashlib
 import json
+from numbers import Real
 from pathlib import Path
 
 import numpy as np
@@ -69,17 +70,25 @@ def generate(seed: int = 2026, jobs: int = 28) -> dict:
 
 def validate_data(d: dict) -> None:
     T = d["T"]
-    if not isinstance(T, int) or T <= 0 or d["dt_hours"] <= 0:
-        raise ValueError("T and dt_hours must be positive")
+    dt = d["dt_hours"]
+    if isinstance(T, bool) or not isinstance(T, int) or T <= 0:
+        raise ValueError("T must be a positive integer")
+    try:
+        valid_dt = (not isinstance(dt, (bool, np.bool_)) and isinstance(dt, Real)
+                    and bool(np.isfinite(dt)) and dt > 0)
+    except (TypeError, ValueError, OverflowError):
+        valid_dt = False
+    if not valid_dt:
+        raise ValueError("dt_hours must be a finite positive number")
     for field in ["gpu_capacity", "pue", "grid_cap_kw", "price_cny_per_kwh",
                   "carbon_kg_per_kwh", "renewable_kw", "inference_gpus"]:
         a = np.asarray(d[field], dtype=float)
-        if len(a) != T or not np.all(np.isfinite(a)) or (field != "price_cny_per_kwh" and np.any(a < 0)):
+        if a.shape != (T,) or not np.all(np.isfinite(a)) or (field != "price_cny_per_kwh" and np.any(a < 0)):
             raise ValueError(f"Invalid time series: {field}")
     for field in ["forecast_renewable_kw","forecast_inference_gpus","forecast_carbon_kg_per_kwh"]:
         if field in d:
             a=np.asarray(d[field],dtype=float)
-            if len(a)!=T or not np.all(np.isfinite(a)) or np.any(a<0):
+            if a.shape!=(T,) or not np.all(np.isfinite(a)) or np.any(a<0):
                 raise ValueError(f"Invalid forecast: {field}")
     if np.any(np.asarray(d["pue"])<1):
         raise ValueError("PUE cannot be below one")

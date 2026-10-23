@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "checked_at_utc": "2026-10-20T14:18:22.381083+00:00",
+  "checked_at_utc": "2026-10-23T15:49:12.837678+00:00",
   "checks": [
     {
       "name": "required_files",
@@ -63,7 +63,7 @@
       "name": "recorded_core_verification",
       "passed": true,
       "detail": {
-        "unit_tests": 61,
+        "unit_tests": 74,
         "numerical_audits": 55
       }
     },
@@ -79,17 +79,17 @@
     {
       "name": "report_matches_pdf_qa_hash",
       "passed": true,
-      "detail": "8f23f632cff9636f261f7d00bc23ed0677f10e0e13baa63998121f4d5c350531"
+      "detail": "d35adafcae29da4aed733227832e00f10630b91bd10f54f4282d4a269592ccb4"
     },
     {
       "name": "latex_source_matches_recorded_pdf_qa",
       "passed": true,
-      "detail": "dd7555dff5245870a5b45c1741cf7b59434de4fe0f981700037b71f8d30af557"
+      "detail": "9297170908b6c17adffe59993d2368be090b91b1b90a2fb6df32fc287cca23ab"
     },
     {
       "name": "explorer_matches_browser_qa_hash",
       "passed": true,
-      "detail": "9b8d52b9a857333e97e083333907939b48c88da46d1c08f02ed0a4e415a06ffb"
+      "detail": "efbea45882dc84cb3a5572da2ec2277705c5a228d8dcfdf52420c153e7506def"
     },
     {
       "name": "explorer_template_matches_recorded_browser_qa",

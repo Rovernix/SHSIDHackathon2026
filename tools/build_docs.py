@@ -46,7 +46,7 @@ def results_markdown(d, solutions, bundle):
         lines.append(f"| {label} | {row['cost_cny']:.2f} | {row['carbon_kg']:.2f} | {row['peak_kw']:.2f} |")
     lines += ["", "Both main replays complete 96 decisions. Candidates 0/2/4/8 are selected on June 2-3 by failures, then cost; June 4-5 provide separate evaluation. The [online study](../results/main/online_study.json) retains every run and constructed shock. The explorer shows the default replay. Neither online policy enforces the offline carbon ceiling or has a global policy certificate.", "", "## Verification", ""]
     evidence = read(QA/"verification.json")
-    lines += [f"The saved run passes **{evidence['unit_tests']['tests_run']} unit tests** and **{len(evidence['numerical_audits'])} independent numerical audits**. Sixty brute-force random cases are subcases of three tests. Checks cover source hashes/fields, conversions, timing, complete jobs, GPU/power limits, all battery states, accounting, causal locks and tampered outputs.", "",
+    lines += [f"The saved run passes **{evidence['unit_tests']['tests_run']} unit tests** and **{len(evidence['numerical_audits'])} independent numerical audits**. Sixty brute-force random cases are subcases of three tests. Checks cover source hashes/fields, conversions, timing, complete jobs, GPU/power limits, unique configured batteries, all energy states, finite arithmetic, accounting, causal locks and tampered outputs.", "",
         "| Evidence | Scope |", "|---|---|",
         "| [Numerical verification](../results/qa/verification.json) | Unit log, audit residuals, source rebuild and 96-step replay |",
         "| [Exact oracle](../results/qa/random_enumeration_qa.json) | 60 independent tiny-instance comparisons |",
@@ -147,7 +147,7 @@ The library supports/tests DAG precedence (parent finishes before child starts),
 
 SciPy `milp` calls HiGHS branch-and-bound/cut methods. Feasible incumbent U and target-problem bound L bracket the optimum; report (U-L)/|U| and actual status. Status 0 means tolerance reached, 1 a time/resource limit, 2 infeasibility. LP relaxation is a lower bound, not an executable fractional schedule. Incumbents may transfer to looser carbon budgets; bounds remain target-specific.
 
-The independent audit reconstructs jobs, GPU limits, load, power balance, grid/solar/ramp, all battery states and cost/carbon without reading the MILP matrix. Online replay locks past actions/launched jobs, hides future releases, and replans each slot; it has no whole-day green cap or global policy certificate.
+The independent audit validates inputs, rejects duplicate/unknown batteries and nonfinite arithmetic, then reconstructs jobs, GPU limits, load, power balance, grid/solar/ramp, energy states and cost/carbon without reading the MILP matrix. Online replay locks history, hides future releases and replans each slot; it has no whole-day green cap or global policy certificate.
 
 Grid charging is counted once; batteries restore initial energy. Average-carbon accounting excludes lifecycle emissions. Power, deadlines, storage, daily peak billing and relocated runtimes remain assumptions. Aggregate GPUs do not certify CPU/RAM/topology or inference latency; a 15-minute model does not validate transients. Capex, TCO and ROI are outside scope.
 

@@ -3,9 +3,9 @@
   "version": "1.1.0",
   "command": "python -m pip wheel --no-deps --no-build-isolation --no-index --wheel-dir tmp/wheels .",
   "wheel": "aidc_power_compute_scheduling-1.1.0-py3-none-any.whl",
-  "sha256": "c7675d65a2e40109938492b58e344c8dee523b4eabec354b6ba211012daea704",
+  "sha256": "f48b19b4c0dfa9ae746aa2417f2e8a2cbc743c3d6210997f502b49d33d9d350f",
   "package_modules_present": true,
   "package_modules_match_current_sources": true,
   "pyproject_sha256": "abab1ef283aa1ee0f3f98634cb698c2903c0182706c3f500fc391d94891deb26",
-  "note": "Wheel construction/module bytes verified; the standalone repository also ships data/configuration/docs outside the wheel."
+  "note": "Wheel construction and current module bytes verified; the standalone repository also ships data/configuration/docs outside the wheel."
 }

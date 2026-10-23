@@ -1,8 +1,8 @@
 {
   "passed": true,
-  "source_files_copied": 149,
+  "source_files_copied": 150,
   "exact_copy_hashes_before_smoke_tests": true,
-  "standalone_unit_and_audit": "Tests: 61; numerical audits: 55; overall pass: True",
+  "standalone_unit_and_audit": "Tests: 74; numerical audits: 55; overall pass: True",
   "standalone_cli": "CLI cases: 4; public input reproducible: True; passed: True",
   "scope": "Browser/PDF artifacts are copied unchanged from the checked originals; Python tests, public input rebuild and CLI checks execute again inside the snapshot."
 }

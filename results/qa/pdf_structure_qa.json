@@ -52,12 +52,12 @@
       "replacement_glyphs": 0,
       "out_of_bounds": [],
       "links": 7,
-      "text_characters": 2474
+      "text_characters": 2483
     }
   ],
   "required_results_present": true,
   "supplemental_citation_only": true,
-  "tex_sha256": "dd7555dff5245870a5b45c1741cf7b59434de4fe0f981700037b71f8d30af557",
-  "sha256": "8f23f632cff9636f261f7d00bc23ed0677f10e0e13baa63998121f4d5c350531",
+  "tex_sha256": "9297170908b6c17adffe59993d2368be090b91b1b90a2fb6df32fc287cca23ab",
+  "sha256": "d35adafcae29da4aed733227832e00f10630b91bd10f54f4282d4a269592ccb4",
   "passed": true
 }
